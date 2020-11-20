@@ -1,0 +1,95 @@
+:root { 
+--darkCyan: hsl(185, 75%, 39%);
+--darkBlue: hsl(229, 23%, 23%);
+--darkGray: hsl(227, 10%, 46%);
+--gray: hsl(0, 0%, 59%);
+}
+
+body {
+    background-color: var(--darkCyan);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kumbh Sans'
+}
+
+
+.profileWindow {
+    display: flex;
+    flex-flow: column wrap;
+    box-shadow: 0 3px 6px var(--darkBlue);
+    height: 375px;
+    width: 350px;
+    background-color: white;
+    border-radius: 15px;
+    justify-content: space-between;
+}
+
+/*header*/
+
+.header {
+    height: 120px;
+    display: flex;
+    width: 100%;
+    background-image: url(./images/bg-pattern-card.svg);
+    border-radius: 15px 15px 0 0;
+}
+
+/*main*/
+
+.victor {
+    display: flex;
+    height: 90px;
+    width: 90px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    align-items: center;
+    margin-top: -90px;
+}
+
+.age {
+    color: var(--darkGray)
+}
+
+.city {
+    color: var(--darkGray);
+    padding-top: 10px;
+}
+
+
+
+/*footer*/
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 0;
+    border-top: 1px solid var(--gray)
+}
+
+.footerBox {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+
+.number {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--darkBlue);
+    line-height: 1.5;
+}
+
+.label {
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--darkGray);
+    letter-spacing: 1px;
+}
